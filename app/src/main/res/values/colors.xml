@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d8cb2</color>
+    <color name="colorPrimaryDark">#134556</color>
+    <color name="colorAccent">#451356</color>
+    <color name="colorButton_continuar">#4ca8c8</color>
+    <color name="cinza_claro">#c8d3d6</color>
+    <color name="back_inicial">#d6d6d6</color>
+
+    <color name="color_agenda">#2d8633</color>
+    <color name="color_agenda_dark">#1f5523</color>
+    <color name="color_horario">#2b78e4</color>
+    <color name="color_horario_dark">#274672</color>
+    <color name="color_cestudo">#b32121</color>
+    <color name="color_cestudo_dark">#621414</color>
+    <color name="color_avaliacoes">#89246f</color>
+    <color name="color_avaliacoes_dark">#3d1332</color>
+    <color name="color_definicoes">#b0b0b0</color>
+    <color name="color_definicoes_dark">#404040</color>
+
+    <color name="agenda_navi">#c4f5c8</color>
+    <color name="agenda_btnDiaAtual">#d3cdec</color>
+
+    <color name="btn_ava">#b0c3ca</color>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Definicoes">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cinza_claro">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnDadUser"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="@android:color/white"
+                android:text="@string/dados_do_utilizador" />
+
+            <Button
+                android:id="@+id/btnNot"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@android:color/white"
+                android:text="@string/notifica_es"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnNovoAno"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@android:color/white"
+                android:text="@string/come_ar_novo_ano_letivo" />
+
+            <Button
+                android:id="@+id/btnWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="@android:color/white"
+                android:text="@string/website" />
+
+            <Button
+                android:id="@+id/btnDenBug"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@android:color/white"
+                android:text="@string/denunciar_bug" />
+
+            <Button
+                android:id="@+id/btnDarOpi"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@android:color/white"
+                android:text="@string/dar_opini_o" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

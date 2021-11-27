@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.deadpixel.dpixel.a4student">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name=".FileChooserActivity"
+            android:enabled="@bool/use_activity"
+            android:exported="true"
+            android:icon="@drawable/ic_chooser"
+            android:label="@string/selecionar_ficheiro"
+            android:theme="@style/ChooserTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <provider
+            android:authorities="com.deadpixel.dpixel.a4student.localstorage.documents"
+            android:name=".LocalStorageProvider"
+            android:enabled="@bool/use_provider"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:permission="android.permissions.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <activity
+            android:name=".Por"
+            android:label="@string/title_activity_por"
+            android:theme="@style/CEstudoTheme"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CEstudo"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_cestudo"
+            android:screenOrientation="portrait"
+            android:theme="@style/CEstudoTheme" />
+        <activity
+            android:name=".Definicoes"
+            android:configChanges="orientation"
+            android:label="@string/defini_es"
+            android:screenOrientation="portrait"
+            android:theme="@style/DefinicoesTheme" />
+        <activity
+            android:name=".Ava"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AvaliacaoTheme" />
+        <activity
+            android:name=".AAva"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AvaliacaoTheme" />
+        <activity
+            android:name=".DT"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AvaliacaoTheme" />
+        <activity
+            android:name=".EditAlunos"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AvaliacaoTheme" />
+        <activity
+            android:name=".AddCAAE"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AvaliacaoTheme" />
+        <activity
+            android:name=".AddCAA"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AvaliacaoTheme" />
+        <activity
+            android:name=".EditDT"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AvaliacaoTheme" />
+        <activity
+            android:name=".AddAlunosA"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AvaliacaoTheme" />
+        <activity
+            android:name=".AddDTA"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AvaliacaoTheme" />
+        <activity
+            android:name=".Avaliacao"
+            android:configChanges="orientation"
+            android:label="@string/title_avaliacao"
+            android:screenOrientation="portrait"
+            android:theme="@style/AvaliacaoTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWAB">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registo"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaginaInicial"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWAB" />
+        <activity
+            android:name=".BoasVindas"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWAB" />
+        <activity
+            android:name=".Registo2"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registo3"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddDT"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddAlunos"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddCA"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Horario"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_horario"
+            android:screenOrientation="portrait"
+            android:theme="@style/HorarioTheme" />
+        <activity
+            android:name=".Agenda"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_agenda"
+            android:screenOrientation="portrait"
+            android:theme="@style/AgendaTheme" />
+    </application>
+
+</manifest>
